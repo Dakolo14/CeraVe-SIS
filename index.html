@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        }
+
+        section{
+            padding: 0 !important;
+            margin:0 !important;
+            min-height: 0 !important;
+        }
+
+        .mySlides {
+            margin-top: 5px;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .box img {
+            max-width: 100%;
+            padding: 20px;
+            height: auto;
+            width: 100%; /* Set width for large image */
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        /* Media query for mobile screens */
+        @media (max-width: 768px) {
+            .box {
+                width: 100%;
+            }
+            
+            .box img {
+                align-items: center;
+                width: 400px; /* Full width for mobile */
+                height: auto;
+                max-height: 400px; /* Adjust height for mobile */
+                margin-inline: auto;
+            }
+
+            .laptop {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+            }
+        }
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="mySlides laptop">
+      <img
+        src="https://www-konga-com-res.cloudinary.com/image/upload/f_auto,q_auto/v1707911511/landingPages/CeraVe/CeraVaBanner.png"
+        style="width: 100%"
+      />
+    </div>
+
+    <div class="mySlides mobile">
+      <img
+        src="Main Banner Mobile.jpg"
+        style="width: 100%"
+      />
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <img src="box-1.png" alt="Body Moisturizers">
+        </div>
+        <div class="box">
+            <img src="box-2.png" alt="Face Cleansers">
+        </div>
+        <div class="box">
+            <img src="box-3.png" alt="Facial Moisturizers">
+        </div>
+        <div class="box">
+            <img src="box-4.png" alt="Body Cleansers">
+        </div>
+    </div>
+    
+    <div class="flyer">
+        
+    </div>
+  </body>
+</html>
+
+
+
+<div class="mySlides">
+    <img
+      src="category-Moisturize-1920x960.png"
+      style="width: 100%"
+      alt="Cerave Moisturizers"
+    />
+</div>
+
+<div>
+    <div>
+        <div class="mySlides laptop">
+            <img
+              src="4.png"
+              style="width: 100%"
+              alt="How does your skin feel after washing"
+            />
+        </div>
+        <div class="mySlides mobile">
+            <img
+              src="4 mobile.png"
+              style="width: 100%"
+              alt="How does your skin feel after washing"
+            />
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <img src="quiz1.png" alt="Dry Skin">
+        </div>
+        <div class="box">
+            <img src="quiz2.png" alt="Clean and refreshed">
+        </div>
+        <div class="box">
+            <img src="quiz3.png" alt="Clean for now but breakthrough shine is coming soon">
+        </div>
+        <div class="box">
+            <img src="quiz4.png" alt="Mostly refreshed but needs moisture in some areas">
+        </div>
+    </div>
+</div>
+
+<div class="mySlides">
+        <img
+          src="https://www-konga-com-res.cloudinary.com/image/upload/f_auto,q_auto/v1708519855/landingPages/CeraVe/CeraVBannereBottom.png"
+          style="width: 100%"
+          alt="CeraVe Banner"
+        />
+</div>
