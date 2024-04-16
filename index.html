@@ -24,6 +24,7 @@
 
         body {
             font-family: "Roboto", sans-serif;
+            background-color: #f2f2f2;
         }
 
         section{
@@ -43,13 +44,13 @@
         }
 
         .box {
-            width: 50%;
+            width: 25%;
             box-sizing: border-box;
         }
 
         .box img {
             max-width: 100%;
-            padding: 20px;
+            padding: 20px 10px 10px;
             height: auto;
             width: 100%; /* Set width for large image */
         }
@@ -58,22 +59,32 @@
             display: none;
         }
 
+        .video-container {
+            display: flex;
+            margin-inline: auto;
+            width: 90%;
+            height: 90%;
+            margin: 20px auto;
+            cursor: pointer; /* Change cursor to pointer when hovering over the video */
+        }
+
         .flyer {
-            background-color: #FFEEED;
-            color: #252525;
+            background-color: #0072CE;
+            color: #fff;
             padding: 16px 24px;
             text-align: left;
         }
 
         .flyer p {
-            font-size: 20px;
+            font-size: 28px;
+            text-align: center;
             font-weight: 600;
         }
 
         /* Media query for mobile screens */
         @media (max-width: 768px) {
             .box {
-                width: 100%;
+                width: 50%;
             }
             
             .box img {
@@ -88,17 +99,26 @@
                 display: none;
             }
 
+            .video-container {
+                display: flex;
+                margin-inline: auto;
+                width: 100%;
+                height: 100%;
+                margin: 5px auto;
+                cursor: pointer; /* Change cursor to pointer when hovering over the video */
+            }
+
             .mobile {
                 display: block;
             }
 
             .flyer {
                 padding: 10px 16px;
-                text-align: left;
+                text-align: center;
             }
     
             .flyer p {
-                font-size: 16px;
+                font-size: 18px;
                 font-weight: 600;
             }
         }
@@ -122,21 +142,51 @@
       />
     </div>
 
-    <div class="container">
+
+    <div class="mySlides">
+        <img
+          src="second banner.png"
+          style="width: 100%"
+          alt="Cerave Moisturizers"
+        />
+    </div>
+
+
+    <div class="video-container" onclick="playVideo()">
+        <!-- Replace 'your-video-link.mp4' with the actual link to your video -->
+        <video width="100%" controls autoplay muted>
+          <source src="cerave-vid.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <div class="flyer">
+        <p>Shop by Category</p>
+    </div>
+
+        <div class="container">
         <div class="box">
-            <img src="https://www-konga-com-res.cloudinary.com/image/upload/f_auto,q_auto/v1711716658/landingPages/CeraVe/box-1.png" alt="Body Moisturizers">
+            <a href="https://www.konga.com/search?search=CeraveBodyMoisturizers">
+                <img src="Body Moisturisers 1500 by 1500.jpeg" alt="Body Moisturizers">
+            </a>
         </div>
         <div class="box">
-            <img src="https://www-konga-com-res.cloudinary.com/image/upload/f_auto,q_auto/v1711716660/landingPages/CeraVe/box-2.png" alt="Facial Cleansers">
+            <a href="https://www.konga.com/search?search=CeraveFaceCleansers">
+                <img src="Facial Cleanser 1500 by 1500.jpeg" alt="Facial Cleansers">
+            </a>
         </div>
         <div class="box">
-            <img src="https://www-konga-com-res.cloudinary.com/image/upload/f_auto,q_auto/v1711716663/landingPages/CeraVe/box-3.png" alt="Facial Moisturizers">
+            <a href="https://www.konga.com/search?search=CeraveFaceMoisturizers">
+                <img src="Facial Moisturisers 1500 by 1500.jpeg" alt="Facial Moisturizers">
+            </a>
         </div>
         <div class="box">
-            <img src="https://www-konga-com-res.cloudinary.com/image/upload/f_auto,q_auto/v1711716652/landingPages/CeraVe/box-4.png" alt="Body Cleansers">
+            <a href="https://www.konga.com/search?search=CeraveSkinRenew">
+                <img src="Body Cleanser 1500 by 1500.jpeg" alt="Body Cleansers">
+            </a>
         </div>
     </div>
-    
+
     <div class="flyer">
         <p>CeraVe Featured Products</p>
     </div>
@@ -145,44 +195,24 @@
 
 
 
-<div class="mySlides">
-    <img
-      src="https://www-konga-com-res.cloudinary.com/image/upload/f_auto,q_auto/v1711716656/landingPages/CeraVe/category-Moisturize-1920x960.png"
-      style="width: 100%; margin-top: 25px;"
-      alt="Cerave Moisturizers"
-    />
-</div>
-
 <div>
-    <div>
-        <div class="mySlides laptop">
+    <div class="mySlides laptop">
+        <a href="whatsapp://send?phone=+2349059428941" target="_blank">
             <img
-              src="https://www-konga-com-res.cloudinary.com/image/upload/f_auto,q_auto/v1711716657/landingPages/CeraVe/4.png"
-              style="width: 100%"
-              alt="How does your skin feel after washing"
+                src="derma.png"
+                style="width: 100%"
+                alt="How does your skin feel after washing"
             />
-        </div>
-        <div class="mySlides mobile">
-            <img
-              src="https://www-konga-com-res.cloudinary.com/image/upload/f_auto,q_auto/v1711716656/landingPages/CeraVe/4_mobile.png"
-              style="width: 100%"
-              alt="How does your skin feel after washing"
-            />
-        </div>
+        </a>
     </div>
-    <div class="container">
-        <div class="box">
-            <img src="https://www-konga-com-res.cloudinary.com/image/upload/f_auto,q_auto/v1711716654/landingPages/CeraVe/quiz1.png" alt="Dry Skin">
-        </div>
-        <div class="box">
-            <img src="https://www-konga-com-res.cloudinary.com/image/upload/f_auto,q_auto/v1711716659/landingPages/CeraVe/quiz2.png" alt="Clean and refreshed">
-        </div>
-        <div class="box">
-            <img src="https://www-konga-com-res.cloudinary.com/image/upload/f_auto,q_auto/v1711716655/landingPages/CeraVe/quiz3.png" alt="Clean for now but breakthrough shine is coming soon">
-        </div>
-        <div class="box">
-            <img src="https://www-konga-com-res.cloudinary.com/image/upload/f_auto,q_auto/v1711716657/landingPages/CeraVe/quiz4.png" alt="Mostly refreshed but needs moisture in some areas">
-        </div>
+    <div class="mySlides mobile">
+        <a href="whatsapp://send?phone=+2349059428941" target="_blank">
+            <img
+                src="derma mobilee.png"
+                style="width: 100%"
+                alt="How does your skin feel after washing"
+            />
+        </a>
     </div>
 </div>
 
@@ -193,3 +223,12 @@
           alt="CeraVe Banner"
         />
 </div>
+
+
+
+<script>
+    function playVideo() {
+      var video = document.querySelector('.video-container video');
+      video.play();
+    }
+</script>
