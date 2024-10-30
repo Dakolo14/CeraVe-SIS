@@ -27,6 +27,15 @@
             background-color: #f2f2f2;
         }
 
+        ._3e6ae_Emfkt {
+            background-color: #f6f6f6;
+            display: inline-block;
+            padding: .53312rem !important;
+            text-align: center;
+            width: 100%;
+            min-height: 2.4375rem !important;
+        }
+
         section{
             padding: 0 !important;
             margin:0 !important;
@@ -54,7 +63,7 @@
 
         .box img, .boxes img {
             max-width: 100%;
-            padding: 20px 10px 10px;
+            padding: 12px;
             height: auto;
             width: 100%; /* Set width for large image */
         }
@@ -84,12 +93,55 @@
             color: #fff;
             padding: 16px 24px;
             text-align: left;
+            background-image: url("https://www-konga-com-res.cloudinary.com/image/upload/v1720106219/landingPages/CeraVe/background-img.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         .flyer p {
             font-size: 28px;
             text-align: center;
             font-weight: 600;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 100%;
+            margin-inline: auto;
+            margin-top: 1.5rem;
+        }
+
+        /* Hide the images by default */
+        .slide-image {
+            display: none;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
         }
 
         /* Media query for mobile screens */
@@ -148,14 +200,14 @@
   <body>
     <div class="mySlides laptop">
       <img
-        src="https://www-konga-com-res.cloudinary.com/image/upload/f_auto,q_auto/v1707911511/landingPages/CeraVe/CeraVaBanner.png"
+        src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto/v1707911511/landingPages/CeraVe/CeraVaBanner.png"
         style="width: 100%"
       />
     </div>
 
     <div class="mySlides mobile">
       <img
-        src="https://www-konga-com-res.cloudinary.com/image/upload/f_auto,q_auto/v1711716652/landingPages/CeraVe/Main_Banner_Mobile.jpg"
+        src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto/v1711716652/landingPages/CeraVe/Main_Banner_Mobile.jpg"
         style="width: 100%"
       />
     </div>
@@ -177,118 +229,134 @@
 
     <div class="container">
         <div class="box">
-            <a href="https://www.konga.com/search?search=CeraveBodyMoisturizers">
-                <img src="Body Moisturiser.jpg" alt="Body Moisturizers">
+            <a href="https://www.konga.com/search?search=CeraveBodyMoisturizer">
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto/v1720167485/landingPages/CeraVe/Body_Moisturiser.png" alt="Body Moisturizers">
             </a>
         </div>
         <div class="box">
-            <a href="https://www.konga.com/search?search=CeraveFaceCleansers">
-                <img src="Facial Cleanser.jpg" alt="Facial Cleansers">
+            <a href="https://www.konga.com/search?search=CeraveFacialCleanser">
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto/v1720167480/landingPages/CeraVe/Facial_Cleanser.png" alt="Facial Cleansers">
             </a>
         </div>
         <div class="box">
-            <a href="https://www.konga.com/search?search=CeraveFaceMoisturizers">
-                <img src="Facial Moisturiser.jpg" alt="Facial Moisturizers">
+            <a href="https://www.konga.com/search?search=CeraveFacialMoisturizer">
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto/v1720167484/landingPages/CeraVe/Facial_Moisturiser.png" alt="Facial Moisturizers">
             </a>
         </div>
         <div class="box">
-            <a href="https://www.konga.com/search?search=CeraveSkinRenew">
-                <img src="Body Cleanser.jpg" alt="Body Cleansers">
+            <a href="https://www.konga.com/search?search=CeraveFacial%2FBodyCleanser">
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto/v1720167481/landingPages/CeraVe/Body_Cleanser.png" alt="Body Cleansers">
             </a>
         </div>
     </div>
 
     <div class="flyer">
-        <p>CeraVe Featured Products</p>
-    </div>
-
-    <div class="mySlides">
-        <img
-          src="products.png"
-          style="width: 100%"
-          alt="Cerave Moisturizers"
-        />
+        <p>Best Sellers</p>
     </div>
 
 
 
 
-    <div>
-        <div class="mySlides laptop">
-            <a href="whatsapp://send?phone=+2349059428941" target="_blank">
-                <img
-                    src="shopnow.jpg"
-                    style="width: 100%"
-                    alt="How does your skin feel after washing"
-                />
-            </a>
-        </div>
-        <div class="mySlides mobile">
-            <a href="whatsapp://send?phone=+2349059428941" target="_blank">
-                <img
-                    src="shopnow.jpg"
-                    style="width: 100%"
-                    alt="How does your skin feel after washing"
-                />
-            </a>
-        </div>
-    </div>
-
-
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/IDH4PzjqnMk" frameborder="0" allowfullscreen></iframe>
-    </div>
-
-
-    <div>
-        <div class="mySlides laptop">
-            <a href="whatsapp://send?phone=+2349059428941" target="_blank">
-                <img
-                    src="4.png"
-                    style="width: 100%"
-                    alt="How does your skin feel after washing"
-                />
-            </a>
-        </div>
-        <div class="mySlides mobile">
-            <a href="whatsapp://send?phone=+2349059428941" target="_blank">
-                <img
-                    src="4 mobile.png"
-                    style="width: 100%"
-                    alt="How does your skin feel after washing"
-                />
-            </a>
-        </div>
-    </div>
-    
-    <div class="container">
-        <div class="boxes">
-            <a href="https://www.konga.com/search?search=CeraveBodyMoisturizers">
-                <img src="quiz1.png" alt="Body Moisturizers">
-            </a>
-        </div>
-        <div class="boxes">
-            <a href="https://www.konga.com/search?search=CeraveFaceCleansers">
-                <img src="quiz2.png" alt="Facial Cleansers">
-            </a>
-        </div>
-        <div class="boxes">
-            <a href="https://www.konga.com/search?search=CeraveFaceMoisturizers">
-                <img src="quiz3.png" alt="Facial Moisturizers">
-            </a>
-        </div>
-        <div class="boxes">
-            <a href="https://www.konga.com/search?search=CeraveSkinRenew">
-                <img src="quiz4.png" alt="Body Cleansers">
-            </a>
-        </div>
-    </div>
 
     
   </body>
 </html>
 
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
+    <!-- Full-width images with number and caption text -->
+    <div class="slide-image fade">
+      <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto/v1730296345/landingPages/CeraVe/clad.png" style="width:100%">
+    </div>
+
+    <div class="slide-image fade">
+      <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto/v1720167479/landingPages/CeraVe/shopnow.jpg" style="width:100%">
+    </div>
+  
+</div>
+
+
+<div class="video-container" onclick="playVideo()">
+    <video width="100%" controls loop autoplay muted>
+        <source src="https://www-konga-com-res.cloudinary.com/video/upload/w_auto,f_auto,fl_lossy,dpr_auto/v1730297341/landingPages/CeraVe/ceravee.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+</div>
+
+
+<div class="mySlides">
+    <img
+        src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto/v1730213219/landingPages/CeraVe/derma.jpg"
+        style="width: 100%"
+        alt="Derma Banner"
+    />
+</div>
+
+<div style="margin-bottom: 10px;">
+    <div class="mySlides">
+            <img
+                src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto/v1720167480/landingPages/CeraVe/stats.png"
+                style="width: 100%"
+                alt="How does your skin feel after washing"
+            />
+    </div>
+</div>
+
+<!-- <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/IDH4PzjqnMk" frameborder="0" allowfullscreen></iframe>
+</div> -->
+
+
+<!-- <div>
+    <div class="mySlides laptop">
+        <a href="whatsapp://send?phone=+2349059428941" target="_blank">
+            <img
+                src="4.png"
+                style="width: 100%"
+                alt="How does your skin feel after washing"
+            />
+        </a>
+    </div>
+    <div class="mySlides mobile">
+        <a href="whatsapp://send?phone=+2349059428941" target="_blank">
+            <img
+                src="4 mobile.png"
+                style="width: 100%"
+                alt="How does your skin feel after washing"
+            />
+        </a>
+    </div>
+</div> -->
+
+
+<div class="flyer">
+    <p>Shop by Skin Type</p>
+</div>
+
+
+<div class="container">
+    <div class="box">
+        <a href="https://www.konga.com/search?search=CeraveDrySkin">
+            <img src="https://www-konga-com-res.cloudinary.com/image/upload/v1730212773/landingPages/CeraVe/type2.png" alt="Cerave Dry To Very Dry">
+        </a>
+    </div>
+    <div class="box">
+        <a href="https://www.konga.com/search?search=CeraveBalanced">
+            <img src="https://www-konga-com-res.cloudinary.com/image/upload/v1730212773/landingPages/CeraVe/type3.png" alt="Cerave Blemish Prone">
+        </a>
+    </div>
+    <div class="box">
+        <a href="https://www.konga.com/search?search=CeraveOilySkin">
+            <img src="https://www-konga-com-res.cloudinary.com/image/upload/v1730212774/landingPages/CeraVe/type1.png" alt="Cerave Oily Skin">
+        </a>
+    </div>
+    <div class="box">
+        <a href="https://www.konga.com/search?search=CeraveCombination">
+            <img src="https://www-konga-com-res.cloudinary.com/image/upload/v1730212773/landingPages/CeraVe/type4.png" alt="Cerave Rough And Bumpy">
+        </a>
+    </div>
+</div>
 
 <!--
 
@@ -316,18 +384,26 @@
 -->
 
 <div class="mySlides">
-        <img
-          src="https://www-konga-com-res.cloudinary.com/image/upload/f_auto,q_auto/v1708519855/landingPages/CeraVe/CeraVBannereBottom.png"
-          style="width: 100%"
-          alt="CeraVe Banner"
-        />
+    <img
+        src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto/v1708519855/landingPages/CeraVe/CeraVBannereBottom.png"
+        style="width: 100%"
+        alt="CeraVe Banner"
+    />
 </div>
 
-
-
 <script>
-    function playVideo() {
-      var video = document.querySelector('.video-container video');
-      video.play();
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slide-image");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
     }
 </script>
